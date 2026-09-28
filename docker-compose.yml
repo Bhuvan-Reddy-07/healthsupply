@@ -1,0 +1,115 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: timescale/timescaledb:latest-pg15
+    container_name: healthsupply_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-healthsupply}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./infra/postgres:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-healthsupply}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  nats:
+    image: nats:2.10-alpine
+    container_name: healthsupply_nats
+    restart: unless-stopped
+    ports:
+      - "4222:4222"
+      - "8222:8222" # monitoring
+    command: ["-m", "8222", "-js"]
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "4222"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: healthsupply_backend
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-healthsupply}
+      NATS_URL: nats://nats:4222
+      SECRET_KEY: ${SECRET_KEY:-dev-secret-key-change-in-production-super-secure-32chars}
+      ENVIRONMENT: ${ENVIRONMENT:-development}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      nats:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app/backend
+      - ./simulator:/app/simulator
+      - ./ml:/app/ml
+    command: >
+      sh -c "alembic upgrade head &&
+             uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload"
+
+  simulator:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: healthsupply_simulator
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-healthsupply}
+      NATS_URL: nats://nats:4222
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./simulator:/app/simulator
+      - ./backend:/app/backend
+    profiles: ["tools", "demo"]
+    command: ["python", "-m", "simulator.cli", "--generate", "--months", "24", "--facilities", "200", "--items", "150"]
+
+  dashboard:
+    image: node:20-alpine
+    container_name: healthsupply_dashboard
+    working_dir: /app
+    volumes:
+      - ./dashboard:/app
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8000/api/v1
+    command: sh -c "echo 'Dashboard service scaffold ready' && tail -f /dev/null"
+
+  flower-node:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: healthsupply_flower_node
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-healthsupply}
+      AGGREGATOR_URL: aggregator:8080
+    profiles: ["federated"]
+    command: sh -c "echo 'Flower node scaffold ready for Phase 4' && tail -f /dev/null"
+
+  aggregator:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: healthsupply_aggregator
+    ports:
+      - "8080:8080"
+    profiles: ["federated"]
+    command: sh -c "echo 'Aggregator service scaffold ready for Phase 4' && tail -f /dev/null"
+
+volumes:
+  pgdata:
