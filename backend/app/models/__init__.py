@@ -7,6 +7,7 @@ from backend.app.models.intelligence import Forecast, Alert, TransferProposal
 from backend.app.models.audit import AuditLog, record_audit, verify_audit_log_integrity
 from backend.app.models.quarantine import QuarantinedEvent
 from backend.app.models.sensor import SensorTemperature
+from backend.app.models.sms_auth import FacilitySmsAuth, hash_phone, hash_pin
 
 __all__ = [
     "Base",
@@ -24,4 +25,7 @@ __all__ = [
     "verify_audit_log_integrity",
     "QuarantinedEvent",
     "SensorTemperature",
+    "FacilitySmsAuth",
+    "hash_phone",
+    "hash_pin",
 ]

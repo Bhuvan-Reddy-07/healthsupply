@@ -6,11 +6,17 @@ from sqlalchemy.orm import Session
 
 from backend.app.models.facilities import Facility
 from backend.app.models.items import Item
+from backend.app.models.sms_auth import FacilitySmsAuth, hash_phone, hash_pin
 from backend.app.ingestion.quarantine import quarantine_event
 from backend.app.ingestion.pipeline import ingest_stock_transaction
 from backend.app.core.logging import logger
 
-def parse_and_process_sms(db: Session, raw_text: str, sender_phone: str = "UNKNOWN") -> Dict[str, Any]:
+def parse_and_process_sms(
+    db: Session,
+    raw_text: str,
+    sender_phone: str = "UNKNOWN",
+    sender_pin: Optional[str] = None
+) -> Dict[str, Any]:
     """
     Parses SMS command: STK <facility> <item_code> <qty>
     Features:
@@ -81,6 +87,40 @@ def parse_and_process_sms(db: Session, raw_text: str, sender_phone: str = "UNKNO
             "message": f"Facility '{facility_raw}' not recognized",
             "raw_text": raw_text
         }
+
+    # 3b. Authenticate Sender (Per-sender phone hash or facility PIN)
+    auth_records = db.query(FacilitySmsAuth).filter(
+        FacilitySmsAuth.facility_id == facility.id,
+        FacilitySmsAuth.is_active == True
+    ).all()
+    if auth_records:
+        phone_h = hash_phone(sender_phone) if sender_phone and sender_phone != "UNKNOWN" else None
+        pin_h = hash_pin(sender_pin) if sender_pin else None
+        
+        authorized = False
+        for auth in auth_records:
+            if phone_h and auth.phone_hash and auth.phone_hash == phone_h:
+                authorized = True
+                break
+            if pin_h and auth.pin_hash and auth.pin_hash == pin_h:
+                authorized = True
+                break
+        
+        if not authorized:
+            quarantine_event(
+                db=db,
+                subject="sms.gateway",
+                source="sms_fallback",
+                raw_payload={"text": raw_text, "sender": sender_phone},
+                reason_code="ERR_UNAUTHORIZED_SMS_SENDER",
+                details=f"Sender '{sender_phone}' / PIN not authorized for facility '{facility.id}'"
+            )
+            return {
+                "status": "rejected",
+                "reason_code": "ERR_UNAUTHORIZED_SMS_SENDER",
+                "message": f"Sender not authorized for facility '{facility.id}'",
+                "raw_text": raw_text
+            }
 
     # 4. Fuzzy Match Item
     all_items = db.query(Item).all()

@@ -19,6 +19,7 @@ router = APIRouter(prefix="/ingest", tags=["ingestion"])
 class SmsWebhookRequest(BaseModel):
     text: str
     sender: Optional[str] = "+91-9876543210"
+    pin: Optional[str] = None
 
 class CrdtBatchSyncRequest(BaseModel):
     facility_id: str
@@ -76,7 +77,12 @@ def sms_gateway_webhook(payload: SmsWebhookRequest, db: Session = Depends(get_db
     Parses STK <facility> <item_code> <qty>
     Fuzzy matches item, enforces non-negative stock, quarantines bad messages.
     """
-    result = parse_and_process_sms(db=db, raw_text=payload.text, sender_phone=payload.sender)
+    result = parse_and_process_sms(
+        db=db,
+        raw_text=payload.text,
+        sender_phone=payload.sender or "UNKNOWN",
+        sender_pin=payload.pin
+    )
     if result["status"] == "rejected":
         return result
     return result

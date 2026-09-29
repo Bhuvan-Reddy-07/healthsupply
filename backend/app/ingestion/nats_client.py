@@ -34,6 +34,28 @@ class IngestionEventBus:
             NATS_SUBJECTS["SENSOR_TEMP"]: ingest_sensor_temperature,
         }
 
+    @staticmethod
+    def is_nats_socket_listening(nats_url: str) -> bool:
+        """Probes whether the host and port for nats_url are reachable via TCP."""
+        import socket
+        from urllib.parse import urlparse
+        parsed = urlparse(nats_url if "://" in nats_url else f"nats://{nats_url}")
+        host = parsed.hostname or "localhost"
+        port = parsed.port or 4222
+        try:
+            with socket.create_connection((host, port), timeout=0.5):
+                return True
+        except (socket.timeout, ConnectionRefusedError, OSError):
+            return False
+
+    def assert_no_fallback_if_nats_reachable(self):
+        """Fails if fallback is active when NATS server is actually reachable."""
+        if self.is_nats_socket_listening(self.nats_url) and self.js is None:
+            raise RuntimeError(
+                f"SAFETY VIOLATION: NATS server is reachable at {self.nats_url}, but event bus fallback is active! "
+                f"Fallback is strictly prohibited when NATS is reachable."
+            )
+
     async def connect(self) -> bool:
         """Attempts connection to live NATS server."""
         try:
