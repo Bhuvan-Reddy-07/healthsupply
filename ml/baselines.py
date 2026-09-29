@@ -64,6 +64,12 @@ def calc_smape(actual: np.ndarray, predicted: np.ndarray, eps: float = 1e-4) -> 
     denom = np.abs(act) + np.abs(pred) + eps
     return float(np.mean(200.0 * np.abs(act - pred) / denom))
 
+def calc_mae(actual: np.ndarray, predicted: np.ndarray) -> float:
+    """Mean Absolute Error (MAE)."""
+    act = np.asarray(actual, dtype=float)
+    pred = np.asarray(predicted, dtype=float)
+    return float(np.mean(np.abs(act - pred)))
+
 def calc_mase(actual: np.ndarray, predicted: np.ndarray, train_history: np.ndarray) -> float:
     """
     Mean Absolute Scaled Error (MASE).

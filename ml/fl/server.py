@@ -17,12 +17,17 @@ class FederatedCoordinator:
         clip_norm: float = 1.0,
         noise_multiplier: float = 0.8,
         min_client_fraction: float = 0.2, # Minimum quorum to tolerate stragglers/dropouts
-        target_delta: float = 1e-5
+        target_delta: float = 1e-5,
+        personalized: bool = False
     ):
         self.clients = clients
         self.n_total_clients = len(clients)
+        self.personalized = personalized
         self.global_model = DemandMLP(input_dim=input_dim, hidden_dim=32)
-        self.global_weights = self.global_model.get_weights()
+        if self.personalized:
+            self.global_weights = self.global_model.get_feature_weights()
+        else:
+            self.global_weights = self.global_model.get_weights()
 
         self.mu = mu
         self.clip_norm = clip_norm
@@ -82,7 +87,10 @@ class FederatedCoordinator:
             new_global_weights.append(weighted_param)
 
         self.global_weights = new_global_weights
-        self.global_model.set_weights(self.global_weights)
+        if self.personalized:
+            self.global_model.set_feature_weights(self.global_weights)
+        else:
+            self.global_model.set_weights(self.global_weights)
 
         # Step RDP Privacy Accountant
         eps, delta = self.accountant.step(q=q, noise_multiplier=self.noise_multiplier, steps=1)

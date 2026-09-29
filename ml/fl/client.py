@@ -21,7 +21,8 @@ class FacilityFlowerClient(fl.client.NumPyClient):
         clip_norm: float = 1.0,
         noise_multiplier: float = 0.8,
         lr: float = 0.01,
-        local_epochs: int = 2
+        local_epochs: int = 2,
+        personalized: bool = False
     ):
         self.facility_id = facility_id
         self.X_train = torch.tensor(X_train, dtype=torch.float32)
@@ -34,17 +35,26 @@ class FacilityFlowerClient(fl.client.NumPyClient):
         self.noise_multiplier = noise_multiplier
         self.lr = lr
         self.local_epochs = local_epochs
+        self.personalized = personalized
 
         self.model = DemandMLP(input_dim=X_train.shape[1], hidden_dim=32)
         self.criterion = nn.MSELoss()
 
     def get_parameters(self, config: Dict[str, Any] = None) -> List[np.ndarray]:
+        if self.personalized:
+            return self.model.get_feature_weights()
         return self.model.get_weights()
 
     def fit(self, parameters: List[np.ndarray], config: Dict[str, Any] = None) -> Tuple[List[np.ndarray], int, Dict[str, Any]]:
-        # Set global weights
-        self.model.set_weights(parameters)
-        global_tensors = [torch.tensor(w, dtype=torch.float32) for w in parameters]
+        # Set global weights (only feature extractor if personalized; full model otherwise)
+        if self.personalized:
+            self.model.set_feature_weights(parameters)
+            global_tensors = [torch.tensor(w, dtype=torch.float32) for w in parameters]
+            prox_params = list(self.model.feature_extractor.parameters())
+        else:
+            self.model.set_weights(parameters)
+            global_tensors = [torch.tensor(w, dtype=torch.float32) for w in parameters]
+            prox_params = list(self.model.parameters())
 
         optimizer = torch.optim.Adam(self.model.parameters(), lr=self.lr)
 
@@ -66,8 +76,9 @@ class FacilityFlowerClient(fl.client.NumPyClient):
 
                 # FedProx Proximal Regularization: (mu / 2) * || w - w_global ||^2
                 prox_term = 0.0
-                for w_local, w_glob in zip(self.model.parameters(), global_tensors):
-                    prox_term += torch.sum((w_local - w_glob) ** 2)
+                if self.mu > 0:
+                    for w_local, w_glob in zip(prox_params, global_tensors):
+                        prox_term += torch.sum((w_local - w_glob) ** 2)
                 
                 loss = task_loss + 0.5 * self.mu * prox_term
                 loss.backward()
@@ -82,13 +93,17 @@ class FacilityFlowerClient(fl.client.NumPyClient):
 
         avg_loss = total_loss / max(1, n_batches)
 
+        # Exported weights: feature extractor only if personalized; full model otherwise
+        if self.personalized:
+            updated_weights = self.model.get_feature_weights()
+        else:
+            updated_weights = self.model.get_weights()
+
         # Apply Differential Privacy Gaussian Noise to exported parameter delta
-        updated_weights = self.model.get_weights()
         if self.noise_multiplier > 0:
             dp_weights = []
             for w, w_g in zip(updated_weights, parameters):
                 delta = w - w_g
-                # Noise scaled by clip_norm and dataset size
                 sigma = (self.noise_multiplier * self.clip_norm) / np.sqrt(max(1, len(self.X_train)))
                 noise = np.random.normal(loc=0.0, scale=sigma, size=delta.shape)
                 dp_weights.append(w_g + delta + noise)
@@ -96,15 +111,25 @@ class FacilityFlowerClient(fl.client.NumPyClient):
         else:
             exported_weights = updated_weights
 
+        # Boundary security verification: assert weights only, zero raw data
+        assert isinstance(exported_weights, list)
+        for arr in exported_weights:
+            assert isinstance(arr, np.ndarray), "Only numpy weight tensors may cross node boundary"
+
         metrics = {
             "facility_id": self.facility_id,
             "train_loss": round(avg_loss, 4),
-            "samples": len(self.X_train)
+            "samples": len(self.X_train),
+            "personalized": self.personalized
         }
         return exported_weights, len(self.X_train), metrics
 
     def evaluate(self, parameters: List[np.ndarray], config: Dict[str, Any] = None) -> Tuple[float, int, Dict[str, Any]]:
-        self.model.set_weights(parameters)
+        if self.personalized:
+            self.model.set_feature_weights(parameters)
+        else:
+            self.model.set_weights(parameters)
+
         self.model.eval()
 
         with torch.no_grad():
