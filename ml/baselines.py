@@ -82,3 +82,22 @@ def calc_mase(actual: np.ndarray, predicted: np.ndarray, train_history: np.ndarr
         return float(mae)
 
     return float(mae / naive_errors)
+
+def calc_wape(actual: np.ndarray, predicted: np.ndarray) -> float:
+    """
+    Weighted Absolute Percentage Error (WAPE) in percentage [0, 100%+].
+    WAPE = (sum(|actual - predicted|) / sum(actual)) * 100
+    Eliminates small-denominator distortion on low-volume health items.
+    """
+    act = np.asarray(actual, dtype=float)
+    pred = np.asarray(predicted, dtype=float)
+    total_act = np.sum(act)
+    if total_act < 1e-4:
+        return 0.0 if np.sum(np.abs(pred)) < 1e-4 else 100.0
+    return float(100.0 * np.sum(np.abs(act - pred)) / total_act)
+
+def calc_rmse(actual: np.ndarray, predicted: np.ndarray) -> float:
+    """Root Mean Squared Error (RMSE)."""
+    act = np.asarray(actual, dtype=float)
+    pred = np.asarray(predicted, dtype=float)
+    return float(np.sqrt(np.mean((act - pred) ** 2)))

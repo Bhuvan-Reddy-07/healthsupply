@@ -1,17 +1,22 @@
-from typing import List, Optional
+from typing import List, Optional, Dict
 from datetime import datetime, timezone
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from backend.app.api.deps import get_db, get_current_user_stub
-from backend.app.models.intelligence import TransferProposal
+from backend.app.models.intelligence import TransferProposal, Forecast
 from backend.app.models.audit import record_audit
 from backend.app.schemas.intelligence import TransferProposalResponse
+from backend.app.optimization.redistribution import RedistributionOptimizer
 
 router = APIRouter(prefix="/transfers", tags=["transfers"])
 
 class RejectProposalRequest(BaseModel):
     reason: str
+
+class GenerateTransfersRequest(BaseModel):
+    planning_horizon_days: int = 30
+    forecasts: Optional[Dict[str, float]] = None # "fac_id:item_id" -> demand_qty
 
 @router.get("", response_model=List[TransferProposalResponse])
 def list_proposals(
@@ -23,6 +28,39 @@ def list_proposals(
     if status_filter:
         query = query.filter(TransferProposal.status == status_filter)
     return query.order_by(TransferProposal.created_at.desc()).limit(limit).all()
+
+@router.post("/generate", response_model=List[TransferProposalResponse])
+def generate_transfers(
+    payload: Optional[GenerateTransfersRequest] = None,
+    db: Session = Depends(get_db),
+    user: dict = Depends(get_current_user_stub)
+):
+    """
+    Triggers Google OR-Tools MILP Redistribution Engine:
+    Solves optimal transfers from surplus to deficit clinics respecting cold-chain and expiry.
+    """
+    optimizer = RedistributionOptimizer(
+        planning_horizon_days=payload.planning_horizon_days if payload else 30
+    )
+    demand_dict = {}
+    if payload and payload.forecasts:
+        for k, v in payload.forecasts.items():
+            if ":" in k:
+                fac, itm = k.split(":", 1)
+                demand_dict[(fac, itm)] = float(v)
+    else:
+        # Load latest p50 forecasts from DB
+        db_forecasts = db.query(Forecast).all()
+        for f in db_forecasts:
+            val = f.reconciled_p50 if f.reconciled_p50 is not None else f.p50
+            demand_dict[(f.facility_id, f.item_id)] = float(val)
+            
+    proposals = optimizer.solve_redistribution(
+        db=db,
+        demand_forecasts=demand_dict,
+        actor=user.get("sub", "redistribution_engine")
+    )
+    return proposals
 
 @router.post("/{proposal_id}/approve", response_model=TransferProposalResponse)
 def approve_proposal(

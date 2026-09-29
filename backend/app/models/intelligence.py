@@ -56,6 +56,7 @@ class TransferProposal(Base):
     recipient_cover_days_after = Column(Float, nullable=False)
     eta_days = Column(Float, nullable=False, default=1.0)
     cold_chain_required = Column(Boolean, default=False, nullable=False)
+    priority = Column(String(16), default="medium", nullable=False) # low, medium, high, urgent
     explanation = Column(Text, nullable=False)
     status = Column(String(32), default="proposed", nullable=False, index=True) # proposed, approved, rejected, in_transit, completed
     rejection_reason = Column(Text, nullable=True)
@@ -65,3 +66,15 @@ class TransferProposal(Base):
 
     item = relationship("Item", back_populates="transfer_proposals")
     batch = relationship("StockBatch", back_populates="transfer_proposals")
+
+    @property
+    def source_facility_id(self) -> str:
+        return self.donor_facility_id
+
+    @property
+    def destination_facility_id(self) -> str:
+        return self.recipient_facility_id
+
+    @property
+    def rationale(self) -> str:
+        return self.explanation

@@ -44,6 +44,7 @@ class TransferProposalResponse(BaseModel):
     recipient_cover_days_after: float
     eta_days: float
     cold_chain_required: bool
+    priority: str = "medium"
     explanation: str
     status: str
     rejection_reason: Optional[str] = None
