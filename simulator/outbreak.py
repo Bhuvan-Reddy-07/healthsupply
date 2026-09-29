@@ -161,24 +161,12 @@ def inject_outbreak(
                     db.add(tx)
                     affected_tx_count += 1
 
-    # Create system alert for outbreak detection
-    alert = Alert(
-        id=f"ALT-OUTBREAK-{uuid.uuid4().hex[:8]}",
-        facility_id=facilities[0].id,
-        item_id=items[0].id,
-        alert_type="outbreak_detected",
-        severity="red",
-        days_remaining=2.5,
-        p_stockout_before_lead=0.95,
-        message=f"Epidemic demand surge: {multiplier}x ramp in district '{district}' across {len(facilities)} facilities for {item_class}."
-    )
-    db.add(alert)
     db.commit()
 
     record_audit(
         db=db,
-        table_name="alerts",
-        record_id=alert.id,
+        table_name="stock_transactions",
+        record_id=f"OUTBREAK-{district}-{item_class}",
         action="INJECT_OUTBREAK",
         actor=actor,
         new_state={"district": district, "item_class": item_class, "multiplier": multiplier, "ramp_days": ramp_days}
@@ -193,6 +181,5 @@ def inject_outbreak(
         "peak_multiplier": multiplier,
         "transactions_generated": affected_tx_count,
         "stockout_censored_events": stockout_events,
-        "total_surged_demand": round(total_spiked_demand, 1),
-        "alert_id": alert.id
+        "total_surged_demand": round(total_spiked_demand, 1)
     }

@@ -9,6 +9,7 @@ from backend.app.api.v1.alerts import router as alerts_router
 from backend.app.api.v1.transfers import router as transfers_router
 from backend.app.api.v1.audit import router as audit_router
 from backend.app.api.v1.simulator import router as simulator_router
+from backend.app.api.v1.ingestion import router as ingestion_router
 
 api_v1_router = APIRouter()
 
@@ -22,3 +23,4 @@ api_v1_router.include_router(alerts_router)
 api_v1_router.include_router(transfers_router)
 api_v1_router.include_router(audit_router)
 api_v1_router.include_router(simulator_router)
+api_v1_router.include_router(ingestion_router)

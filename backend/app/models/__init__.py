@@ -5,6 +5,8 @@ from backend.app.models.stock import StockBatch, StockTransaction
 from backend.app.models.bed_staff import BedState, StaffAttendance
 from backend.app.models.intelligence import Forecast, Alert, TransferProposal
 from backend.app.models.audit import AuditLog, record_audit, verify_audit_log_integrity
+from backend.app.models.quarantine import QuarantinedEvent
+from backend.app.models.sensor import SensorTemperature
 
 __all__ = [
     "Base",
@@ -20,4 +22,6 @@ __all__ = [
     "AuditLog",
     "record_audit",
     "verify_audit_log_integrity",
+    "QuarantinedEvent",
+    "SensorTemperature",
 ]
