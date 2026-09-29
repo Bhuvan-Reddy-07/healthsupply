@@ -67,5 +67,17 @@ def health_check():
         "environment": settings.ENVIRONMENT
     }
 
+import os
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import RedirectResponse
+
 # Mount /api/v1
 app.include_router(api_v1_router, prefix=settings.API_V1_STR)
+
+dashboard_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../dashboard"))
+if os.path.exists(dashboard_path):
+    app.mount("/dashboard", StaticFiles(directory=dashboard_path, html=True), name="dashboard")
+
+@app.get("/", include_in_schema=False)
+def root():
+    return RedirectResponse(url="/dashboard/")

@@ -28,6 +28,9 @@ test-phase0:
 
 test: test-phase0
 
+demo:
+	python -m demo.runner
+
 clean:
 	find . -type d -name __pycache__ -exec rm -rf {} +
 	find . -type f -name "*.pyc" -delete

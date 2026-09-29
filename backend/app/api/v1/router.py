@@ -10,6 +10,7 @@ from backend.app.api.v1.transfers import router as transfers_router
 from backend.app.api.v1.audit import router as audit_router
 from backend.app.api.v1.simulator import router as simulator_router
 from backend.app.api.v1.ingestion import router as ingestion_router
+from backend.app.api.v1.dashboard import router as dashboard_router
 
 api_v1_router = APIRouter()
 
@@ -24,3 +25,4 @@ api_v1_router.include_router(transfers_router)
 api_v1_router.include_router(audit_router)
 api_v1_router.include_router(simulator_router)
 api_v1_router.include_router(ingestion_router)
+api_v1_router.include_router(dashboard_router)
