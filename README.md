@@ -1,10 +1,13 @@
 # HealthSupply: Healthcare Supply Chain Intelligence & Proactive Redistribution System
 
+[![Live Demo: GitHub Pages](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-success?style=flat-square&logo=github)](https://bhuvan-reddy-07.github.io/healthsupply/)
 [![Tests: 53/53 Passing](https://img.shields.io/badge/Tests-53%2F53%20Passing-success?style=flat-square&logo=pytest)](file:///c:/Users/bhuva/Desktop/practice/gemini%20hackathon/tests)
 [![Python: 3.11 Pinned](https://img.shields.io/badge/Python-3.11%20Pinned-blue?style=flat-square&logo=python)](file:///c:/Users/bhuva/Desktop/practice/gemini%20hackathon/pyproject.toml)
 [![Architecture: Modular Monolith](https://img.shields.io/badge/Architecture-Modular%20Monolith-purple?style=flat-square)](file:///c:/Users/bhuva/Desktop/practice/gemini%20hackathon/backend)
 [![Differential Privacy: ε=3.84](https://img.shields.io/badge/Privacy-RDP%20ε%3D3.84%20%E2%89%A4%204.0-darkgreen?style=flat-square)](file:///c:/Users/bhuva/Desktop/practice/gemini%20hackathon/ml/fl)
 [![Demo Runtime: <1s](https://img.shields.io/badge/Demo%20Runtime-0.78s%20%28384x%20budget%29-brightgreen?style=flat-square)](file:///c:/Users/bhuva/Desktop/practice/gemini%20hackathon/demo/runner.py)
+
+> 🌐 **Interactive Live Control Center (GitHub Pages):** [https://bhuvan-reddy-07.github.io/healthsupply/](https://bhuvan-reddy-07.github.io/healthsupply/)
 
 An offline-tolerant, tamper-evident, federated healthcare supply chain intelligence and proactive redistribution platform engineered for resource-constrained health systems (Primary Health Centres, Community Health Centres, and District Hospitals) across sovereign national nodes.
 

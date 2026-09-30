@@ -1,0 +1,63 @@
+{
+  "status": "active",
+  "total_nodes": 2,
+  "nodes": [
+    {
+      "node_id": "COUNTRY_A_NODE",
+      "country": "Country A",
+      "role": "Edge Client",
+      "samples_trained": 400,
+      "status": "connected",
+      "local_mae": 3.995,
+      "mTLS_status": "TLS_1_3_VERIFIED"
+    },
+    {
+      "node_id": "COUNTRY_B_NODE",
+      "country": "Country B",
+      "role": "Edge Client",
+      "samples_trained": 250,
+      "status": "connected",
+      "local_mae": 2.357,
+      "mTLS_status": "TLS_1_3_VERIFIED"
+    }
+  ],
+  "rounds_completed": 8,
+  "aggregation_algorithm": "FedProx (mu=0.1) + Personalization",
+  "privacy": {
+    "accountant": "R\u00e9nyi Differential Privacy (RDP)",
+    "epsilon": 3.84,
+    "delta": 1e-05,
+    "clip_norm_S": 1.0,
+    "noise_multiplier_sigma": 0.8,
+    "guarantee": "EPSILON_LESS_THAN_4_SATISFIED"
+  },
+  "accuracy_comparison": [
+    {
+      "model": "Isolated Local",
+      "avg_mae": 18.134,
+      "avg_wape": "55.2%"
+    },
+    {
+      "model": "Naive FedAvg",
+      "avg_mae": 4.055,
+      "avg_wape": "15.7%"
+    },
+    {
+      "model": "FedProx",
+      "avg_mae": 3.641,
+      "avg_wape": "14.0%"
+    },
+    {
+      "model": "FedProx + Personalization",
+      "avg_mae": 3.176,
+      "avg_wape": "12.5%"
+    }
+  ],
+  "killer_outbreak_transfer": {
+    "source_country": "Country A",
+    "target_country": "Country B",
+    "isolated_mae": 31.713,
+    "federated_mae": 3.662,
+    "improvement_pct": 88.45
+  }
+}

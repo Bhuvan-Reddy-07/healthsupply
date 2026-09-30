@@ -1,0 +1,4103 @@
+{
+  "total_facilities": 200,
+  "total_unacknowledged_alerts": 1,
+  "critical_alerts": 1,
+  "pending_transfers": 0,
+  "approved_transfers": 1,
+  "districts": [
+    {
+      "district": "Kolar",
+      "region": "Southern_Region",
+      "country": "Country_A",
+      "facility_count": 15,
+      "critical_facilities": 1,
+      "status": "critical"
+    },
+    {
+      "district": "District_A_1",
+      "region": "Southern_Region",
+      "country": "Country_A",
+      "facility_count": 17,
+      "critical_facilities": 0,
+      "status": "normal"
+    },
+    {
+      "district": "District_A_2",
+      "region": "Southern_Region",
+      "country": "Country_A",
+      "facility_count": 17,
+      "critical_facilities": 0,
+      "status": "normal"
+    },
+    {
+      "district": "District_A_3",
+      "region": "Southern_Region",
+      "country": "Country_A",
+      "facility_count": 17,
+      "critical_facilities": 0,
+      "status": "normal"
+    },
+    {
+      "district": "District_A_4",
+      "region": "Southern_Region",
+      "country": "Country_A",
+      "facility_count": 17,
+      "critical_facilities": 0,
+      "status": "normal"
+    },
+    {
+      "district": "District_A_0",
+      "region": "Southern_Region",
+      "country": "Country_A",
+      "facility_count": 17,
+      "critical_facilities": 0,
+      "status": "normal"
+    },
+    {
+      "district": "District_B_1",
+      "region": "Border_Territory",
+      "country": "Country_B",
+      "facility_count": 20,
+      "critical_facilities": 0,
+      "status": "normal"
+    },
+    {
+      "district": "District_B_2",
+      "region": "Border_Territory",
+      "country": "Country_B",
+      "facility_count": 20,
+      "critical_facilities": 0,
+      "status": "normal"
+    },
+    {
+      "district": "District_B_3",
+      "region": "Border_Territory",
+      "country": "Country_B",
+      "facility_count": 20,
+      "critical_facilities": 0,
+      "status": "normal"
+    },
+    {
+      "district": "District_B_4",
+      "region": "Border_Territory",
+      "country": "Country_B",
+      "facility_count": 20,
+      "critical_facilities": 0,
+      "status": "normal"
+    },
+    {
+      "district": "District_B_0",
+      "region": "Border_Territory",
+      "country": "Country_B",
+      "facility_count": 20,
+      "critical_facilities": 0,
+      "status": "normal"
+    }
+  ],
+  "facilities_geojson": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.52,
+            12.915000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-001",
+          "name": "Country_A Clinic 1 (PHC)",
+          "tier": "PHC",
+          "district": "Kolar",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "critical",
+          "severity": "red"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.54,
+            12.93
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-002",
+          "name": "Country_A Clinic 2 (PHC)",
+          "tier": "PHC",
+          "district": "Kolar",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.56,
+            12.945
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-003",
+          "name": "Country_A Clinic 3 (PHC)",
+          "tier": "PHC",
+          "district": "Kolar",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.58,
+            12.96
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-004",
+          "name": "Country_A Clinic 4 (PHC)",
+          "tier": "PHC",
+          "district": "Kolar",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6,
+            12.975
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-005",
+          "name": "Country_A Clinic 5 (CHC)",
+          "tier": "CHC",
+          "district": "Kolar",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.62,
+            12.99
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-006",
+          "name": "Country_A Clinic 6 (PHC)",
+          "tier": "PHC",
+          "district": "Kolar",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.64,
+            13.005
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-007",
+          "name": "Country_A Clinic 7 (PHC)",
+          "tier": "PHC",
+          "district": "Kolar",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.66,
+            13.02
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-008",
+          "name": "Country_A Clinic 8 (PHC)",
+          "tier": "PHC",
+          "district": "Kolar",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.68,
+            13.035
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-009",
+          "name": "Country_A Clinic 9 (PHC)",
+          "tier": "PHC",
+          "district": "Kolar",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5,
+            13.05
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-010",
+          "name": "Country_A Clinic 10 (CHC)",
+          "tier": "CHC",
+          "district": "Kolar",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.52,
+            13.065
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-011",
+          "name": "Country_A Clinic 11 (PHC)",
+          "tier": "PHC",
+          "district": "Kolar",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.54,
+            13.08
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-012",
+          "name": "Country_A Clinic 12 (PHC)",
+          "tier": "PHC",
+          "district": "Kolar",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.56,
+            13.095
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-013",
+          "name": "Country_A Clinic 13 (PHC)",
+          "tier": "PHC",
+          "district": "Kolar",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.58,
+            13.110000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-014",
+          "name": "Country_A Clinic 14 (PHC)",
+          "tier": "PHC",
+          "district": "Kolar",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6,
+            13.125
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-015",
+          "name": "Country_A Clinic 15 (DH)",
+          "tier": "DH",
+          "district": "Kolar",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.62,
+            13.14
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-016",
+          "name": "Country_A Clinic 16 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.64,
+            13.155000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-017",
+          "name": "Country_A Clinic 17 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.66,
+            13.17
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-018",
+          "name": "Country_A Clinic 18 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.68,
+            13.185
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-019",
+          "name": "Country_A Clinic 19 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5,
+            13.200000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-020",
+          "name": "Country_A Clinic 20 (CHC)",
+          "tier": "CHC",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.52,
+            13.215
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-021",
+          "name": "Country_A Clinic 21 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.54,
+            13.23
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-022",
+          "name": "Country_A Clinic 22 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.56,
+            13.245000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-023",
+          "name": "Country_A Clinic 23 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.58,
+            13.26
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-024",
+          "name": "Country_A Clinic 24 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6,
+            13.275
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-025",
+          "name": "Country_A Clinic 25 (CHC)",
+          "tier": "CHC",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.62,
+            13.290000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-026",
+          "name": "Country_A Clinic 26 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.64,
+            13.305
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-027",
+          "name": "Country_A Clinic 27 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.66,
+            13.32
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-028",
+          "name": "Country_A Clinic 28 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.68,
+            13.335
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-029",
+          "name": "Country_A Clinic 29 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5,
+            13.35
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-030",
+          "name": "Country_A Clinic 30 (DH)",
+          "tier": "DH",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.52,
+            13.365
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-031",
+          "name": "Country_A Clinic 31 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.54,
+            13.38
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-032",
+          "name": "Country_A Clinic 32 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.56,
+            13.395
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-033",
+          "name": "Country_A Clinic 33 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.58,
+            13.41
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-034",
+          "name": "Country_A Clinic 34 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6,
+            13.425
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-035",
+          "name": "Country_A Clinic 35 (CHC)",
+          "tier": "CHC",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.62,
+            13.440000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-036",
+          "name": "Country_A Clinic 36 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.64,
+            13.455
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-037",
+          "name": "Country_A Clinic 37 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.66,
+            13.47
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-038",
+          "name": "Country_A Clinic 38 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.68,
+            13.485
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-039",
+          "name": "Country_A Clinic 39 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5,
+            13.5
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-040",
+          "name": "Country_A Clinic 40 (CHC)",
+          "tier": "CHC",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.52,
+            13.515
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-041",
+          "name": "Country_A Clinic 41 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.54,
+            13.530000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-042",
+          "name": "Country_A Clinic 42 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.56,
+            13.545
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-043",
+          "name": "Country_A Clinic 43 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.58,
+            13.56
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-044",
+          "name": "Country_A Clinic 44 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6,
+            13.575000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-045",
+          "name": "Country_A Clinic 45 (DH)",
+          "tier": "DH",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.62,
+            13.59
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-046",
+          "name": "Country_A Clinic 46 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.64,
+            13.605
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-047",
+          "name": "Country_A Clinic 47 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.66,
+            13.620000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-048",
+          "name": "Country_A Clinic 48 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.68,
+            13.635
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-049",
+          "name": "Country_A Clinic 49 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5,
+            13.65
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-050",
+          "name": "Country_A Clinic 50 (CHC)",
+          "tier": "CHC",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.52,
+            13.665000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-051",
+          "name": "Country_A Clinic 51 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.54,
+            13.68
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-052",
+          "name": "Country_A Clinic 52 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.56,
+            13.695
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-053",
+          "name": "Country_A Clinic 53 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.58,
+            13.71
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-054",
+          "name": "Country_A Clinic 54 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6,
+            13.725
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-055",
+          "name": "Country_A Clinic 55 (CHC)",
+          "tier": "CHC",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.62,
+            13.74
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-056",
+          "name": "Country_A Clinic 56 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.64,
+            13.755
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-057",
+          "name": "Country_A Clinic 57 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.66,
+            13.77
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-058",
+          "name": "Country_A Clinic 58 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.68,
+            13.785
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-059",
+          "name": "Country_A Clinic 59 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5,
+            13.8
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-060",
+          "name": "Country_A Clinic 60 (DH)",
+          "tier": "DH",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.52,
+            13.815
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-061",
+          "name": "Country_A Clinic 61 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.54,
+            13.83
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-062",
+          "name": "Country_A Clinic 62 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.56,
+            13.845
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-063",
+          "name": "Country_A Clinic 63 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.58,
+            13.86
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-064",
+          "name": "Country_A Clinic 64 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6,
+            13.875
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-065",
+          "name": "Country_A Clinic 65 (CHC)",
+          "tier": "CHC",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.62,
+            13.89
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-066",
+          "name": "Country_A Clinic 66 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.64,
+            13.905000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-067",
+          "name": "Country_A Clinic 67 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.66,
+            13.92
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-068",
+          "name": "Country_A Clinic 68 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.68,
+            13.935
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-069",
+          "name": "Country_A Clinic 69 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5,
+            13.950000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-070",
+          "name": "Country_A Clinic 70 (CHC)",
+          "tier": "CHC",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.52,
+            13.965
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-071",
+          "name": "Country_A Clinic 71 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.54,
+            13.98
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-072",
+          "name": "Country_A Clinic 72 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.56,
+            13.995000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-073",
+          "name": "Country_A Clinic 73 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.58,
+            14.01
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-074",
+          "name": "Country_A Clinic 74 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6,
+            14.025
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-075",
+          "name": "Country_A Clinic 75 (DH)",
+          "tier": "DH",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.62,
+            14.040000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-076",
+          "name": "Country_A Clinic 76 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.64,
+            14.055
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-077",
+          "name": "Country_A Clinic 77 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.66,
+            14.07
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-078",
+          "name": "Country_A Clinic 78 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.68,
+            14.085
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-079",
+          "name": "Country_A Clinic 79 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5,
+            14.1
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-080",
+          "name": "Country_A Clinic 80 (CHC)",
+          "tier": "CHC",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.52,
+            14.115
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-081",
+          "name": "Country_A Clinic 81 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.54,
+            14.13
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-082",
+          "name": "Country_A Clinic 82 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.56,
+            14.145
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-083",
+          "name": "Country_A Clinic 83 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.58,
+            14.16
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-084",
+          "name": "Country_A Clinic 84 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6,
+            14.175
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-085",
+          "name": "Country_A Clinic 85 (CHC)",
+          "tier": "CHC",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.62,
+            14.190000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-086",
+          "name": "Country_A Clinic 86 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.64,
+            14.205
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-087",
+          "name": "Country_A Clinic 87 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.66,
+            14.22
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-088",
+          "name": "Country_A Clinic 88 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.68,
+            14.235
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-089",
+          "name": "Country_A Clinic 89 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5,
+            14.25
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-090",
+          "name": "Country_A Clinic 90 (DH)",
+          "tier": "DH",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.52,
+            14.265
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-091",
+          "name": "Country_A Clinic 91 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.54,
+            14.280000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-092",
+          "name": "Country_A Clinic 92 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.56,
+            14.295
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-093",
+          "name": "Country_A Clinic 93 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.58,
+            14.31
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-094",
+          "name": "Country_A Clinic 94 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6,
+            14.325000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-095",
+          "name": "Country_A Clinic 95 (CHC)",
+          "tier": "CHC",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.62,
+            14.34
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-096",
+          "name": "Country_A Clinic 96 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_1",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.64,
+            14.355
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-097",
+          "name": "Country_A Clinic 97 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_2",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.66,
+            14.370000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-098",
+          "name": "Country_A Clinic 98 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_3",
+          "country": "Country_A",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.68,
+            14.385
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-099",
+          "name": "Country_A Clinic 99 (PHC)",
+          "tier": "PHC",
+          "district": "District_A_4",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5,
+            14.4
+          ]
+        },
+        "properties": {
+          "id": "FAC-A-100",
+          "name": "Country_A Clinic 100 (CHC)",
+          "tier": "CHC",
+          "district": "District_A_0",
+          "country": "Country_A",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.22500000000001,
+            13.512
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-001",
+          "name": "Country_B Clinic 1 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.25,
+            13.524
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-002",
+          "name": "Country_B Clinic 2 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.275,
+            13.536
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-003",
+          "name": "Country_B Clinic 3 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.3,
+            13.548
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-004",
+          "name": "Country_B Clinic 4 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.325,
+            13.56
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-005",
+          "name": "Country_B Clinic 5 (CHC)",
+          "tier": "CHC",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.35000000000001,
+            13.572
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-006",
+          "name": "Country_B Clinic 6 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.375,
+            13.584
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-007",
+          "name": "Country_B Clinic 7 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.4,
+            13.596
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-008",
+          "name": "Country_B Clinic 8 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.425,
+            13.608
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-009",
+          "name": "Country_B Clinic 9 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.2,
+            13.62
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-010",
+          "name": "Country_B Clinic 10 (CHC)",
+          "tier": "CHC",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.22500000000001,
+            13.632
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-011",
+          "name": "Country_B Clinic 11 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.25,
+            13.644
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-012",
+          "name": "Country_B Clinic 12 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.275,
+            13.656
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-013",
+          "name": "Country_B Clinic 13 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.3,
+            13.668
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-014",
+          "name": "Country_B Clinic 14 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.325,
+            13.68
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-015",
+          "name": "Country_B Clinic 15 (DH)",
+          "tier": "DH",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.35000000000001,
+            13.692
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-016",
+          "name": "Country_B Clinic 16 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.375,
+            13.704
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-017",
+          "name": "Country_B Clinic 17 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.4,
+            13.716
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-018",
+          "name": "Country_B Clinic 18 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.425,
+            13.728
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-019",
+          "name": "Country_B Clinic 19 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.2,
+            13.74
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-020",
+          "name": "Country_B Clinic 20 (CHC)",
+          "tier": "CHC",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.22500000000001,
+            13.752
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-021",
+          "name": "Country_B Clinic 21 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.25,
+            13.764
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-022",
+          "name": "Country_B Clinic 22 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.275,
+            13.776
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-023",
+          "name": "Country_B Clinic 23 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.3,
+            13.788
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-024",
+          "name": "Country_B Clinic 24 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.325,
+            13.8
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-025",
+          "name": "Country_B Clinic 25 (CHC)",
+          "tier": "CHC",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.35000000000001,
+            13.812
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-026",
+          "name": "Country_B Clinic 26 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.375,
+            13.824
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-027",
+          "name": "Country_B Clinic 27 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.4,
+            13.836
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-028",
+          "name": "Country_B Clinic 28 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.425,
+            13.848
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-029",
+          "name": "Country_B Clinic 29 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.2,
+            13.86
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-030",
+          "name": "Country_B Clinic 30 (DH)",
+          "tier": "DH",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.22500000000001,
+            13.872
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-031",
+          "name": "Country_B Clinic 31 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.25,
+            13.884
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-032",
+          "name": "Country_B Clinic 32 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.275,
+            13.896
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-033",
+          "name": "Country_B Clinic 33 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.3,
+            13.908
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-034",
+          "name": "Country_B Clinic 34 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.325,
+            13.92
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-035",
+          "name": "Country_B Clinic 35 (CHC)",
+          "tier": "CHC",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.35000000000001,
+            13.932
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-036",
+          "name": "Country_B Clinic 36 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.375,
+            13.944
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-037",
+          "name": "Country_B Clinic 37 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.4,
+            13.956
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-038",
+          "name": "Country_B Clinic 38 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.425,
+            13.968
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-039",
+          "name": "Country_B Clinic 39 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.2,
+            13.98
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-040",
+          "name": "Country_B Clinic 40 (CHC)",
+          "tier": "CHC",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.22500000000001,
+            13.992
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-041",
+          "name": "Country_B Clinic 41 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.25,
+            14.004
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-042",
+          "name": "Country_B Clinic 42 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.275,
+            14.016
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-043",
+          "name": "Country_B Clinic 43 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.3,
+            14.028
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-044",
+          "name": "Country_B Clinic 44 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.325,
+            14.04
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-045",
+          "name": "Country_B Clinic 45 (DH)",
+          "tier": "DH",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.35000000000001,
+            14.052
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-046",
+          "name": "Country_B Clinic 46 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.375,
+            14.064
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-047",
+          "name": "Country_B Clinic 47 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.4,
+            14.076
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-048",
+          "name": "Country_B Clinic 48 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.425,
+            14.088
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-049",
+          "name": "Country_B Clinic 49 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.2,
+            14.1
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-050",
+          "name": "Country_B Clinic 50 (CHC)",
+          "tier": "CHC",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.22500000000001,
+            14.112
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-051",
+          "name": "Country_B Clinic 51 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.25,
+            14.124
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-052",
+          "name": "Country_B Clinic 52 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.275,
+            14.136
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-053",
+          "name": "Country_B Clinic 53 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.3,
+            14.148
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-054",
+          "name": "Country_B Clinic 54 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.325,
+            14.16
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-055",
+          "name": "Country_B Clinic 55 (CHC)",
+          "tier": "CHC",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.35000000000001,
+            14.172
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-056",
+          "name": "Country_B Clinic 56 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.375,
+            14.184
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-057",
+          "name": "Country_B Clinic 57 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.4,
+            14.196
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-058",
+          "name": "Country_B Clinic 58 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.425,
+            14.208
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-059",
+          "name": "Country_B Clinic 59 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.2,
+            14.22
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-060",
+          "name": "Country_B Clinic 60 (DH)",
+          "tier": "DH",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.22500000000001,
+            14.232
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-061",
+          "name": "Country_B Clinic 61 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.25,
+            14.244
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-062",
+          "name": "Country_B Clinic 62 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.275,
+            14.256
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-063",
+          "name": "Country_B Clinic 63 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.3,
+            14.268
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-064",
+          "name": "Country_B Clinic 64 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.325,
+            14.28
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-065",
+          "name": "Country_B Clinic 65 (CHC)",
+          "tier": "CHC",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.35000000000001,
+            14.292
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-066",
+          "name": "Country_B Clinic 66 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.375,
+            14.304
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-067",
+          "name": "Country_B Clinic 67 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.4,
+            14.316
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-068",
+          "name": "Country_B Clinic 68 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.425,
+            14.328
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-069",
+          "name": "Country_B Clinic 69 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.2,
+            14.34
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-070",
+          "name": "Country_B Clinic 70 (CHC)",
+          "tier": "CHC",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.22500000000001,
+            14.352
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-071",
+          "name": "Country_B Clinic 71 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.25,
+            14.364
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-072",
+          "name": "Country_B Clinic 72 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.275,
+            14.376
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-073",
+          "name": "Country_B Clinic 73 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.3,
+            14.388
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-074",
+          "name": "Country_B Clinic 74 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.325,
+            14.4
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-075",
+          "name": "Country_B Clinic 75 (DH)",
+          "tier": "DH",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.35000000000001,
+            14.412
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-076",
+          "name": "Country_B Clinic 76 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.375,
+            14.424
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-077",
+          "name": "Country_B Clinic 77 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.4,
+            14.436
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-078",
+          "name": "Country_B Clinic 78 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.425,
+            14.448
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-079",
+          "name": "Country_B Clinic 79 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.2,
+            14.46
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-080",
+          "name": "Country_B Clinic 80 (CHC)",
+          "tier": "CHC",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.22500000000001,
+            14.472
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-081",
+          "name": "Country_B Clinic 81 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.25,
+            14.484
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-082",
+          "name": "Country_B Clinic 82 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.275,
+            14.496
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-083",
+          "name": "Country_B Clinic 83 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.3,
+            14.508
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-084",
+          "name": "Country_B Clinic 84 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.325,
+            14.52
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-085",
+          "name": "Country_B Clinic 85 (CHC)",
+          "tier": "CHC",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.35000000000001,
+            14.532
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-086",
+          "name": "Country_B Clinic 86 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.375,
+            14.544
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-087",
+          "name": "Country_B Clinic 87 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.4,
+            14.556000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-088",
+          "name": "Country_B Clinic 88 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.425,
+            14.568
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-089",
+          "name": "Country_B Clinic 89 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.2,
+            14.58
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-090",
+          "name": "Country_B Clinic 90 (DH)",
+          "tier": "DH",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.22500000000001,
+            14.592
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-091",
+          "name": "Country_B Clinic 91 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.25,
+            14.604
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-092",
+          "name": "Country_B Clinic 92 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.275,
+            14.616
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-093",
+          "name": "Country_B Clinic 93 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.3,
+            14.628
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-094",
+          "name": "Country_B Clinic 94 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.325,
+            14.64
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-095",
+          "name": "Country_B Clinic 95 (CHC)",
+          "tier": "CHC",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.35000000000001,
+            14.652000000000001
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-096",
+          "name": "Country_B Clinic 96 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_1",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.375,
+            14.664
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-097",
+          "name": "Country_B Clinic 97 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_2",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.4,
+            14.676
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-098",
+          "name": "Country_B Clinic 98 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_3",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.425,
+            14.688
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-099",
+          "name": "Country_B Clinic 99 (PHC)",
+          "tier": "PHC",
+          "district": "District_B_4",
+          "country": "Country_B",
+          "has_cold_chain": false,
+          "status": "healthy",
+          "severity": null
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            78.2,
+            14.7
+          ]
+        },
+        "properties": {
+          "id": "FAC-B-100",
+          "name": "Country_B Clinic 100 (CHC)",
+          "tier": "CHC",
+          "district": "District_B_0",
+          "country": "Country_B",
+          "has_cold_chain": true,
+          "status": "healthy",
+          "severity": null
+        }
+      }
+    ]
+  },
+  "timestamp": "2026-09-30T17:55:43.370090+00:00"
+}

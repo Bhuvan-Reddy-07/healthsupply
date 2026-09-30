@@ -1,0 +1,276 @@
+{
+  "district": "Kolar",
+  "item_name": "Artemether-Lumefantrine 20/120mg",
+  "timeline": [
+    {
+      "date": "2026-09-10",
+      "actual_demand": 21.5,
+      "forecast_p10": 16.0,
+      "forecast_p50": 20.0,
+      "forecast_p90": 26.0,
+      "cusum_score": 0.0,
+      "is_outbreak_regime": false
+    },
+    {
+      "date": "2026-09-11",
+      "actual_demand": 23.0,
+      "forecast_p10": 16.0,
+      "forecast_p50": 20.0,
+      "forecast_p90": 26.0,
+      "cusum_score": 0.0,
+      "is_outbreak_regime": false
+    },
+    {
+      "date": "2026-09-12",
+      "actual_demand": 20.0,
+      "forecast_p10": 16.0,
+      "forecast_p50": 20.0,
+      "forecast_p90": 26.0,
+      "cusum_score": 0.0,
+      "is_outbreak_regime": false
+    },
+    {
+      "date": "2026-09-13",
+      "actual_demand": 21.5,
+      "forecast_p10": 16.0,
+      "forecast_p50": 20.0,
+      "forecast_p90": 26.0,
+      "cusum_score": 0.0,
+      "is_outbreak_regime": false
+    },
+    {
+      "date": "2026-09-14",
+      "actual_demand": 23.0,
+      "forecast_p10": 16.0,
+      "forecast_p50": 20.0,
+      "forecast_p90": 26.0,
+      "cusum_score": 0.0,
+      "is_outbreak_regime": false
+    },
+    {
+      "date": "2026-09-15",
+      "actual_demand": 20.0,
+      "forecast_p10": 16.0,
+      "forecast_p50": 20.0,
+      "forecast_p90": 26.0,
+      "cusum_score": 0.0,
+      "is_outbreak_regime": false
+    },
+    {
+      "date": "2026-09-16",
+      "actual_demand": 21.5,
+      "forecast_p10": 16.0,
+      "forecast_p50": 20.0,
+      "forecast_p90": 26.0,
+      "cusum_score": 0.0,
+      "is_outbreak_regime": false
+    },
+    {
+      "date": "2026-09-17",
+      "actual_demand": 23.0,
+      "forecast_p10": 16.0,
+      "forecast_p50": 20.0,
+      "forecast_p90": 26.0,
+      "cusum_score": 0.0,
+      "is_outbreak_regime": false
+    },
+    {
+      "date": "2026-09-18",
+      "actual_demand": 20.0,
+      "forecast_p10": 16.0,
+      "forecast_p50": 20.0,
+      "forecast_p90": 26.0,
+      "cusum_score": 0.0,
+      "is_outbreak_regime": false
+    },
+    {
+      "date": "2026-09-19",
+      "actual_demand": 21.5,
+      "forecast_p10": 16.0,
+      "forecast_p50": 20.0,
+      "forecast_p90": 26.0,
+      "cusum_score": 0.0,
+      "is_outbreak_regime": false
+    },
+    {
+      "date": "2026-09-20",
+      "actual_demand": 23.0,
+      "forecast_p10": 16.0,
+      "forecast_p50": 20.0,
+      "forecast_p90": 26.0,
+      "cusum_score": 0.0,
+      "is_outbreak_regime": false
+    },
+    {
+      "date": "2026-09-21",
+      "actual_demand": 20.0,
+      "forecast_p10": 16.0,
+      "forecast_p50": 20.0,
+      "forecast_p90": 26.0,
+      "cusum_score": 0.0,
+      "is_outbreak_regime": false
+    },
+    {
+      "date": "2026-09-22",
+      "actual_demand": 21.5,
+      "forecast_p10": 16.0,
+      "forecast_p50": 20.0,
+      "forecast_p90": 26.0,
+      "cusum_score": 0.0,
+      "is_outbreak_regime": false
+    },
+    {
+      "date": "2026-09-23",
+      "actual_demand": 20.0,
+      "forecast_p10": 15.2,
+      "forecast_p50": 19.0,
+      "forecast_p90": 24.7,
+      "cusum_score": 0.0,
+      "is_outbreak_regime": false
+    },
+    {
+      "date": "2026-09-24",
+      "actual_demand": 27.0,
+      "forecast_p10": 20.5,
+      "forecast_p50": 25.6,
+      "forecast_p90": 33.3,
+      "cusum_score": 0.8,
+      "is_outbreak_regime": false
+    },
+    {
+      "date": "2026-09-25",
+      "actual_demand": 34.0,
+      "forecast_p10": 25.8,
+      "forecast_p50": 32.3,
+      "forecast_p90": 42.0,
+      "cusum_score": 1.6,
+      "is_outbreak_regime": true
+    },
+    {
+      "date": "2026-09-26",
+      "actual_demand": 41.0,
+      "forecast_p10": 31.1,
+      "forecast_p50": 38.9,
+      "forecast_p90": 50.6,
+      "cusum_score": 2.4,
+      "is_outbreak_regime": true
+    },
+    {
+      "date": "2026-09-27",
+      "actual_demand": 48.0,
+      "forecast_p10": 36.5,
+      "forecast_p50": 45.6,
+      "forecast_p90": 59.3,
+      "cusum_score": 3.2,
+      "is_outbreak_regime": true
+    },
+    {
+      "date": "2026-09-28",
+      "actual_demand": 55.0,
+      "forecast_p10": 41.8,
+      "forecast_p50": 52.2,
+      "forecast_p90": 67.9,
+      "cusum_score": 4.0,
+      "is_outbreak_regime": true
+    },
+    {
+      "date": "2026-09-29",
+      "actual_demand": 62.0,
+      "forecast_p10": 47.1,
+      "forecast_p50": 58.9,
+      "forecast_p90": 76.6,
+      "cusum_score": 4.8,
+      "is_outbreak_regime": true
+    },
+    {
+      "date": "2026-09-30",
+      "actual_demand": 69.0,
+      "forecast_p10": 52.4,
+      "forecast_p50": 65.5,
+      "forecast_p90": 85.2,
+      "cusum_score": 5.6,
+      "is_outbreak_regime": true
+    },
+    {
+      "date": "2026-10-01",
+      "actual_demand": null,
+      "forecast_p10": 57.8,
+      "forecast_p50": 72.2,
+      "forecast_p90": 93.9,
+      "cusum_score": 6.4,
+      "is_outbreak_regime": true
+    },
+    {
+      "date": "2026-10-02",
+      "actual_demand": null,
+      "forecast_p10": 63.0,
+      "forecast_p50": 78.8,
+      "forecast_p90": 102.4,
+      "cusum_score": 7.2,
+      "is_outbreak_regime": true
+    },
+    {
+      "date": "2026-10-03",
+      "actual_demand": null,
+      "forecast_p10": 68.4,
+      "forecast_p50": 85.5,
+      "forecast_p90": 111.2,
+      "cusum_score": 8.0,
+      "is_outbreak_regime": true
+    },
+    {
+      "date": "2026-10-04",
+      "actual_demand": null,
+      "forecast_p10": 68.4,
+      "forecast_p50": 85.5,
+      "forecast_p90": 111.2,
+      "cusum_score": 8.5,
+      "is_outbreak_regime": true
+    },
+    {
+      "date": "2026-10-05",
+      "actual_demand": null,
+      "forecast_p10": 68.4,
+      "forecast_p50": 85.5,
+      "forecast_p90": 111.2,
+      "cusum_score": 8.5,
+      "is_outbreak_regime": true
+    },
+    {
+      "date": "2026-10-06",
+      "actual_demand": null,
+      "forecast_p10": 68.4,
+      "forecast_p50": 85.5,
+      "forecast_p90": 111.2,
+      "cusum_score": 8.5,
+      "is_outbreak_regime": true
+    },
+    {
+      "date": "2026-10-07",
+      "actual_demand": null,
+      "forecast_p10": 68.4,
+      "forecast_p50": 85.5,
+      "forecast_p90": 111.2,
+      "cusum_score": 8.5,
+      "is_outbreak_regime": true
+    },
+    {
+      "date": "2026-10-08",
+      "actual_demand": null,
+      "forecast_p10": 68.4,
+      "forecast_p50": 85.5,
+      "forecast_p90": 111.2,
+      "cusum_score": 8.5,
+      "is_outbreak_regime": true
+    },
+    {
+      "date": "2026-10-09",
+      "actual_demand": null,
+      "forecast_p10": 68.4,
+      "forecast_p50": 85.5,
+      "forecast_p90": 111.2,
+      "cusum_score": 8.5,
+      "is_outbreak_regime": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "PROP-4A75047C",
+    "donor_facility_id": "FAC-A-015",
+    "recipient_facility_id": "FAC-A-001",
+    "item_id": "MED_MALARIA_01",
+    "batch_id": "BATCH-SURPLUS-DH01",
+    "quantity": 675.0,
+    "donor_cover_days_before": 112.5,
+    "donor_cover_days_after": 61.9,
+    "recipient_cover_days_before": 2.2,
+    "recipient_cover_days_after": 36.0,
+    "eta_days": 0.5,
+    "cold_chain_required": false,
+    "priority": "high",
+    "explanation": "Proactive transfer of 675.0 strip of Artemether-Lumefantrine 20/120mg: Relieves deficit at Country_A Clinic 1 (PHC) while salvaging surplus at Country_A Clinic 15 (DH). Transit distance: 24.9 km.",
+    "status": "approved",
+    "rejection_reason": null,
+    "reviewed_by": "Dr. S. Sharma (District Medical Officer)",
+    "reviewed_at": "2026-09-30T06:25:58.609143",
+    "created_at": "2026-09-30T06:25:58.677869"
+  }
+]
